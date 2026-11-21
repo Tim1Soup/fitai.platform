@@ -1,0 +1,111 @@
+.workouts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.workouts-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.workouts-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.workouts-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.workouts-search-box {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+}
+
+.workouts-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.workouts-search {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  font-size: 13.5px;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.workouts-search:focus {
+  border-color: var(--accent-border);
+}
+
+.workouts-search::placeholder {
+  color: var(--text-muted);
+}
+
+.workouts-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.workouts-chip {
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.workouts-chip:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.workouts-chip-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text-on);
+  font-weight: 600;
+}
+
+.workouts-chip-active:hover {
+  background: var(--accent-hover);
+  color: var(--accent-text-on);
+}
+
+.workouts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+}
+
+.workouts-empty {
+  padding: 40px 20px;
+  text-align: center;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  font-size: 14px;
+}

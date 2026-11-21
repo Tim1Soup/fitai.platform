@@ -1,0 +1,110 @@
+.workout-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: background 0.15s, border-color 0.2s, transform 0.15s;
+}
+
+.workout-card:hover {
+  background: var(--bg-elevated);
+  border-color: var(--accent-border);
+  transform: translateY(-2px);
+}
+
+.workout-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.workout-card-category {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.workout-card-diff {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.workout-card-title {
+  font-size: 16.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.workout-card-metrics {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.workout-card-metric {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.workout-card-muscles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.workout-card-tag {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  padding: 3px 9px;
+  border-radius: 8px;
+}
+
+.workout-card:hover .workout-card-tag {
+  background: var(--bg-canvas);
+}
+
+.workout-card-footer {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.workout-card-equip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.workout-card-arrow {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: color 0.15s, transform 0.15s;
+}
+
+.workout-card:hover .workout-card-arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
